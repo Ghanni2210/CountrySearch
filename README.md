@@ -1,0 +1,118 @@
+
+## 🛠️ Tech Stack
+
+- **React**: Frontend framework.
+- **React Router**: For seamless navigation between pages.
+- **CSS/Tailwind CSS**: For responsive and modern UI styling.
+- **REST API**: Fetching country data dynamically.
+- **Debouncing**: To optimize input handling and API requests.
+
+---
+
+
+### 1. **Home Page**  
+   - Input box for searching countries.  
+   - Shimmering effect during loading.  
+   - Country suggestions based on the query.  
+
+### 2. **Details Page**  
+   - Displays country details, including flag, name, capital, and currency.
+
+---
+
+## 🚀 Getting Started
+
+### 1. **Clone the Repository**  
+```bash
+https://github.com/Ghanni2210/CountrySearch.git
+```
+
+### 2. **Install Dependencies**  
+```bash
+npm install
+```
+
+### 3. **Start the Development Server**  
+```bash
+npm start
+```
+
+The app will be available at [http://localhost:3000](http://localhost:3000).
+
+---
+
+## 📂 File Structure
+
+```
+.
+├── src
+│   ├── components
+│   │   ├── CountryCard.jsx        # Component for rendering country details
+│   │   ├── Skeleton.jsx           # Shimmering effect for loading state
+│   │   └── Toast.jsx              # Toast notifications for API responses
+│   ├── helper
+│   │   └── api_endpoint.js        # All api endpoints at one place
+│   │   └── util.js                # common helper functions
+│   ├── routes
+│   │   └── indexRoute.jsx         # All routes of application
+│   ├── hooks
+│   │   └── index.js               # Custom hook for debounced API calls
+│   ├── screens
+│   │   ├── HomePage.jsx           # Main search page
+│   │   └── ResultsPage.jsx        # Country details page
+│   ├── App.jsx                    # Main app component
+│   └── index.js                   # Entry point
+└── README.md                      # Documentation
+```
+
+---
+
+## 🧩 Key Concepts Demonstrated
+
+- **Debouncing**: Implemented in the `useCountrySuggestions` hook to delay API calls.  
+- **API Integration**: Utilized REST API for dynamic country search and detailed data fetching.  
+- **State Management**: Managed application state using React hooks (`useState`, `useEffect`, `useCallback`).  
+- **Loading States**: Added shimmering effects using a reusable `SkeletonCard` component.  
+- **Routing**: Managed page transitions with `React Router`.  
+
+---
+
+## ✨ Assignment Objectives Fulfilled
+
+1. **Input Field with Debouncing**:  
+   Users can type a country name, and the app efficiently fetches suggestions after a delay.
+
+2. **API Call and Display**:  
+   Fetched country data is displayed with a list of matching results.
+
+3. **Shimmering Effect**:  
+   Ensures a smooth loading experience for users.
+
+4. **Detailed Information Page**:  
+   Navigates to a new page to display selected country details.
+
+---
+
+## 🌟 How It Works
+
+### 1. **Home Page**  
+   - Start typing a country name in the input box.  
+   - A debounced API call fetches country suggestions.  
+   - While the results load, a **shimmering effect** is displayed.  
+   - Click on a suggestion or submit the query to see detailed information.
+
+### 2. **Details Page**  
+   - Displays additional information, such as the **flag**, **official name**, **capital**, and **currency**.
+
+---
+
+## 📈 Future Improvements
+
+- Add **autocomplete** functionality for quicker selection.
+- Implement **pagination** for large lists of suggestions.
+- Add **dark mode** for better user experience.
+- Integrate **unit tests** to ensure application reliability.
+
+---
+
+
